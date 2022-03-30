@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://vk.vkfaces.com/impg/U5VvDXSeFwVIWxIvjcjMzQCIH9fKfw4JSVn_cw/ddZQOzHdlfM.jpg?size=694x694&quality=96&sign=81f05de40ee8a48bd3e395ddd1532c63&c_uniq_tag=n86K-f_ig6ZxOIme965HM9a9ZcnWgkD4kGva2dR4Cx0&type=album" type="image/x-icon">
+    <style>
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  *,
+  *:before,
+  *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  :focus,
+  :active {
+    outline: none;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+}
+  input::-ms-clear {
+    display: none;
+}
+input, button {
+    cursor: pointer;
+}
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+body {
+    background: url('background_geometry.jpg') center/cover no-repeat;
+}
+@keyframes cAd_anim {
+    0% {
+        background-position:0 0, 0 0;
+    }
+    100% {
+        background-position:1080px calc(1080px * 2), calc(1080px * 2) calc(1080px * 3);
+    }
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #65bfe2; */
+    background: url('candy-and-duck_background.png'), url('candy-and-duck_background2.png');
+    animation: cAd_anim 100s cubic-bezier(0.19, 0.23, 0.71, 0.59) infinite;
+    min-height: 100%;
+}
+
+.registration {
+    width: 40vw;
+    max-width: 350px;
+    min-width: 230px;
+}
+
+.form__elementDiv {
+    height: 45px;
+    margin: 7px 0 0 0;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.4);
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    z-index: 5;
+}
+.form__element {
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    font-size: 17px;
+    color: #333;
+    font-weight: 600;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.form__elementDiv:last-child {
+    margin: 18px 0 0 0;
+}
+.form__elementDiv:focus-within {
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.9);
+}
+.form__elementDiv:focus-within input::-webkit-input-placeholder {
+    color: white;
+}
+button.form__element {
+    background-color: #079bcf;
+    color: #fff;
+}
+input.form__element {
+    cursor: text;
+}
+input.form__element::-webkit-input-placeholder {
+    font-weight: 500;
+    color: #c8c8c8;
+}
+input.form__element:-moz-placeholder {
+    font-weight: 500;
+    color: #c8c8c8;
+}
+.registration__text {
+    color: #fff;
+    font-size: 1.3em;
+    margin: 7px 0 0 0;
+    text-align: center;
+}
+.registration__text-link {
+    text-decoration: none;
+    color: #f4d348;
+}
+.registration__form {
+    position: relative;
+}
+.duck {
+    width: 90px;
+    position: absolute;
+    right: -10px;
+    top: -70px;
+    z-index: 2;
+}
+.duck img {
+    width: 100%;
+}
+@media (max-width: 700px) {
+    .registration__text {
+        font-size: 1.1em;
+    }
+    .form__element {
+        font-size: 14px;
+    }
+}
+    </style>
+    <title>Вход</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="registration">
+            <form action="#" class="registration__form">
+                <div class="duck"><img src="duck_from-input.png" alt=""></div>
+                    <div class="form__elementDiv">
+                        <input placeholder="Ваш ID" type="number" id="telegramId" class="form__element">
+                    </div>
+                    <div class="form__elementDiv">
+                        <input placeholder="Пароль" type="password" id="password" class="form__element">
+                    </div>
+                    <div class="form__elementDiv">
+                        <button type="submit" class="form__element">Войти</button>
+                    </div>
+            </form>
+            <div class="registration__text">
+                Не зарегистрированы? Напишите <a href="#" class="registration__text-link">сюда</a> для регистрации!
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
